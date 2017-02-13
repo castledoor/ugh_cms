@@ -1,0 +1,16 @@
+
+<div class="welcome">
+  <div class="logo">
+    <%= image_tag "middleman-logo.svg" %>
+  </div>
+  <h1>Middleman is Running with Gulp!</h1>
+  <div class="today"></div>
+  <p class="doc">
+    <%= link_to "Read Documentahhhhhhtion Online", "https://middlemanapp.com", target: "_blank" %>
+  </p>
+
+  <% dato.features.each do |feature| %>
+      <p> <%= feature.ranking %> </p>
+      <p> <%= feature.artist_name %> </p>
+    <% end %>
+</div>
