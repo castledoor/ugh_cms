@@ -9,9 +9,30 @@
     <%= link_to "Read Documentahhhhhhtion Online", "https://middlemanapp.com", target: "_blank" %>
   </p>
 
-
+<p>Active Cycle</p>
   <% dato.features.each do |feature| %>
+    <% if feature.active == true %>
+      <p> <%= feature.ranking %> </p>
+      <p> <%= feature.artist_name %> </p>
+    <% else %>
+      <p>Archive Cycle</p>
       <p> <%= feature.ranking %> </p>
       <p> <%= feature.artist_name %> </p>
     <% end %>
+  <% end %>
+    <div class="my-slider">
+     <ul>
+    <% dato.slider_features.each do |slider| %>
+
+
+ 
+    <li class="slider-images"><%= image_tag "#{slider.artist_image.file.to_url}" %></li>
+ 
+
+    
+    
+
+    <% end %>
+     </ul>
+    </div>
 </div>
