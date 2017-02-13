@@ -27,5 +27,5 @@ configure :build do
 end
 
 activate :dato,
-  token: '73fe31ca4776cfe72aa536fa80083b43614ee61ccdbaf284e9',
+  token: '411c3801ffc2a51963c6788d3f06fb6b1aa6b389744c80513d',
   base_url: 'http://lifeguard-chimpanzee-26586.netlify.com/'
